@@ -55,11 +55,6 @@ var data = JSON.parse(localStorage.getItem('dataLocalStorage'));
 //     var dataJSONString = JSON.stringify(data);
 //     localStorage.setItem('dataLocalStorage', dataJSONString )
 
-    ////////////////////////////////////////////////////////////////////////
-
-
-
-
 
 
 function round(number){
@@ -120,13 +115,7 @@ function inputToTable(){
           
     }
 
-    
-
-
-
-
-
-
+ 
 
 function calcStock(){
 for(var i = 0; i <5; i++){
@@ -546,14 +535,6 @@ function ctrlAddItem(){
      //clear UI input fields
      clearFields();
 
-
-     ///////Notes for tomorrow!!!!!//////
-
-  
-    
-     
-     //retrive and input to UI localstorage values for data obj
-     //take net total away from bank balance on click of upDate stock button
 
 
     }
