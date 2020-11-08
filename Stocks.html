@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <title>Stocks</title>
+    </head>
+
+    <body>
+            
+        <div class='page'  >
+                <h1>Dingle Banking </h1>
+                
+                <p class ="div-1"><em>Mr & Mr Frothbrook<br>22 Marketwell Road<br>Port Pindle </em></p>
+        
+
+        <table border="1"
+        summary="">
+     <caption><em>Trading Account: Frothbrook</em></caption>
+  
+     <tr>
+         <th rowspan="2">Bussiness
+  
+     <tr>
+         <th>Stock Price</th>
+         <th>Previous Price</th>
+         <th>Stock Owned</th>
+         <th>Current Value</th>
+         <th>Buy</th>
+         <th>Sell</th>
+         <th>Total dividends</th>
+         <th>Balance</th>
+     </tr>
+
+     <tr>
+         <th>Dingle Bank</th>
+         <td>183cm</td>
+         <td>65kg</td>
+         <td>35%</td>
+         <td>100%</td>
+         <td><button id='dingle-buy'>+1</button></td>
+         <td><button id='dingle-sell'>-1</button></td>
+         <td>100%</td>
+         <td>0</td>
+         
+     </tr>
+     <tr>
+         <th>Hubert Textiles</th>
+         <td></td>
+         <td>54kg</td>
+         <td>35%</td>
+         <td>100%</td>
+         <td><button id='hubert-buy'>+1</button></td>
+         <td><button id='hubert-sell'>-1</button></td>
+         <td>100%</td>
+         <td>0</td>
+     </tr>
+     <tr>
+        <th>Waldwin Entertainment</th>
+        <td>183cm</td>
+        <td>65kg</td>
+        <td>100%</td>
+        <td>100%</td>
+        <td><button id='waldwin-buy'>+1</button></td>
+         <td><button id='waldwin-sell'>-1</button></td>
+         <td>100%</td>
+         <td>0</td>
+        
+    </tr>
+    <tr>
+        <th>Fields Produce</th>
+        <td>183cm</td>
+        <td>65kg</td>
+        <td>100%</td>
+        <td>100%</td>
+        <td><button id='fields-buy'>+1</button></td>
+         <td><button id='fields-sell'>-1</button></td>
+         <td>100%</td>
+         <td>0</td>
+        
+    </tr>
+    <tr>
+        <th>Hesselworth Shipping</th>
+        <td>183cm</td>
+        <td>65kg</td>
+        <td>0</td>
+        <td>0</td>
+        <td><button id='hesselworth-buy'>+1</button></td>
+         <td><button id='hesselworth-sell'>-1</button></td>
+         <td>0</td>
+         <td>0</td>
+        
+    </tr>
+   
+ </table>
+
+        <button id= "update-stock">Update stock</button>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+       
+        Account balance&nbsp&nbsp<input type="number" value="" readonly id ="account-balance">
+        <button id = 'btn-withdrawl'>Withdrawl</button>
+        <button id = 'btn-deposit'>Deposit</button>
+
+        <div class="bottom">
+            <div class="add">
+                <div class="add__container">
+                    <select class="add__type">
+                        <option value="inc" selected>+</option>
+                        <option value="exp">-</option>
+                    </select>
+                    <input type="text" class="add__description" placeholder="Add description">
+                    <input type="number" class="add__value" placeholder="Value">
+                    <button class="add__btn"><i class="ion-ios-checkmark-outline"></i></button>
+                </div>
+            </div>
+            
+            <div class="container clearfix">
+                <div class="income">
+                    <h2 class="icome__title">Income</h2>
+                    
+                    <div class="income__list">
+                       
+                        <!--
+                        <div class="item clearfix" id="income-0">
+                            <div class="item__description">Salary</div>
+                            <div class="right clearfix">
+                                <div class="item__value">+ 2,100.00</div>
+                                <div class="item__delete">
+                                    <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="item clearfix" id="income-1">
+                            <div class="item__description">Sold car</div>
+                            <div class="right clearfix">
+                                <div class="item__value">+ 1,500.00</div>
+                                <div class="item__delete">
+                                    <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        -->
+                        
+                    </div>
+                </div>
+                
+                
+                
+                <div class="expenses">
+                    <h2 class="expenses__title">Expenses</h2>
+                    
+                    <div class="expenses__list">
+                       
+                        <!--
+                        <div class="item clearfix" id="expense-0">
+                            <div class="item__description">Apartment rent</div>
+                            <div class="right clearfix">
+                                <div class="item__value">- 900.00</div>
+                                <div class="item__percentage">21%</div>
+                                <div class="item__delete">
+                                    <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item clearfix" id="expense-1">
+                            <div class="item__description">Grocery shopping</div>
+                            <div class="right clearfix">
+                                <div class="item__value">- 435.28</div>
+                                <div class="item__percentage">10%</div>
+                                <div class="item__delete">
+                                    <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        -->
+                        
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+
+        <p class ="p-2"><em>My sincere gratitude,<br><br><br>
+            Lionel Vinkerpot<br>Head of Trading<br>Dingle Bank<br>Freeport </em></p>
+        </div>
+
+        
+        <script src="script.js"></script>
+    </body>
+</html>
